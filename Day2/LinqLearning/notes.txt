@@ -1,0 +1,26 @@
+
+
+In-Memory objects: Data/memory stored in collections
+Lists, Dictionary, Arrays, can use LINQ because the output of LINQ is IEnumerable
+
+Out-memory sources: sources outside the scope of code:
+Json, text, Databases.
+LINQ can still be used on these because LINQ is a library of extension methods that target
+IEnumerable objects. 
+
+Out-memory sources outputs IQueryable. But IQueryable inherits IEnumerable.
+
+LINQ providers:
+LINQ to Objects: Allows to use LINQ on InMemory Sources
+LINQ to Entities: Process data stored in External Sources/database
+LINQ to XML: Old and not common practice.
+
+ORMs: Object Relational Mapping: Connect Asp.Net Application
+to SQL Server without and "Impendnace Mismatch"
+
+Map: conversion of object types
+
+ORMs: need providers to connect your LINQ to SQL Server
+
+IQueryable vs IEnumerable:
+Immediate Execution vs Delayed Execution:
